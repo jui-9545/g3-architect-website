@@ -23,6 +23,12 @@
 .text-light-gray{
     color: rgb(114, 114, 114);
 }
+.section-title{
+        font-size: 45px;
+        font-weight: 700;
+        color: rgb(19, 19, 19);
+    
+}
 
 /* header styles*/
 header {
@@ -34,15 +40,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
-.nav-title {
-    font-size: 45px;
-    font-weight: 700;
-    color: rgb(19, 19, 19);
-}
+
 
 nav>ul {
     display: flex;

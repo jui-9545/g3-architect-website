@@ -1,130 +1,162 @@
 /*work sens font from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* inversal style*/
-*{
+* {
     font-family: "Work Sans", sans-serif;
 
 }
-.btn-primary{
+
+.btn-primary {
     border-radius: 8px;
     background: rgb(255, 144, 14);
     padding: 20px 25px;
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 600;
-    border:0;
-    cursor:pointer;
+    border: 0;
+    cursor: pointer;
     margin-top: 32px;
     margin-bottom: 50px;
 
 }
+.text-light-gray{
+    color: rgb(114, 114, 114);
+}
+
 /* header styles*/
-header{
+header {
     background: rgba(255, 144, 14, 0.1);
     padding: 50px 240px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    
+
 }
-.nav-title{
+
+.nav-title {
     font-size: 45px;
     font-weight: 700;
     color: rgb(19, 19, 19);
 }
-nav>ul{
+
+nav>ul {
     display: flex;
 }
+
 /*(nav>ul>li or nav li) dileo kaj korbe*/
-nav li{
+nav li {
     list-style: none;
     margin-right: 50px;
     font-weight: 500;
-    font-size: 1 rem;
+    font-size: 1 rem; /* 1 rem=16px */
 
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: rgb(66, 66, 66);
 
 
 }
+
 /*banner styles*/
-.banner-content{
+.banner-content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto;    
     text-align: center;
 
 }
-.banner-title{
+
+.banner-title {
     font-size: 64px;
     font-weight: 700;
     color: rgb(19, 19, 19);
 }
-.banner-description{
+
+.banner-description {
     font-size: 16px;
     font-weight: 400;
     color: rgb(114, 114, 114);
 
 }
 
-  .banner img{
-         width: 100%;
+.banner img {
+    width: 100%;
 
 }
-/*responsive media query with header*/
-/*mobile device*/
 
-@media screen and (max-width:576px){
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
-/* tablet device*/
-@media screen and (min-width:576px)and (max-width:960px){
-    header{
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
 
 /*start main section styles*/
-main{
-    max-width:1440px;
-     margin:0 auto;
+main {
+    max-width: 1440px;
+    margin: 70px auto;
 }
-.teams-container{
+
+.teams-container {
     display: flex;
     align-items: center;
-    
+
 
 }
-.teams-img-container{
+
+.teams-img-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 
 }
-.teams-content{
+
+.teams-content {
     padding-right: 70px;
     padding-left: 70px;
 }
-.teams-title{
+
+.teams-title {
     font-size: 45px;
 }
-.Quick-list{
-     color: #727272;
-     font-weight: 700;
+
+.Quick-list {
+    color: #727272;
+    font-weight: 700;
 }
-.text-features{
+
+.text-features {
     color: #FF900E;
     font-weight: 700;
+}
+
+/*responsive media query with header*/
+/*mobile device*/
+
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav, .teams-container {
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* tablet device*/
+@media screen and (min-width:576px)and (max-width:960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav,.teams-container{
+        flex-direction: column;
+    }
 }
